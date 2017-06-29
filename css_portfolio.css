@@ -1,0 +1,263 @@
+/*Limpar os padroes*/
+*{
+  margin: 0;
+  padding: 0;
+}
+#imgHTML{
+  width: 100%;
+  height: 800px;
+  background: url(imagens/hiiamdavilopes.png);
+  background-size: cover;
+}
+#topBar{
+  background: black;
+  height: 25%;
+  border-bottom: 2px solid #C0C0C0;
+  width: 100%;
+}
+#topLine{
+  width: 100%;
+  border: 5px solid red;
+}
+.logo{
+  font-family: 'Josefin Sans', sans-serif;
+  color: #C0C0C0;
+  float: left;
+  padding: 10px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+#topMenu{
+  float: right;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+  color:white;
+  padding: 20px 20px;
+  margin-top: 2px;
+  margin-right: 25%;
+}
+.textoDentro{
+  width: 800px;
+  margin: 50px auto 40px auto;
+
+}
+.topH1{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 45px;
+  text-align: center;
+  font-weight:bold;
+  padding: 5px 0;
+}
+.text{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 21px;
+  margin: 20px;
+}
+
+#me{
+  float: left;
+  width: 220px;
+  height: 220px;
+  margin: 20px 16px 10px 0;
+}
+#aboutText{
+  padding: 20px;
+}
+a{
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #C0C0C0;
+  transition: all 0.3s ease-in-out;
+}
+
+.imageLogo{
+  width: 100px;
+  padding: 8px;
+  margin: 20px;
+  margin-left: 15px;
+}
+
+li{
+  list-style: none;
+  float: left;
+  padding: 4px;
+
+}
+
+.barMenu{
+  position: fixed;
+  padding: 15px 20px 15px 15px;
+  margin-top: 70px; /*169*/
+  color: white;
+  cursor: pointer;
+  background-color:  #C0C0C0;
+  z-index: 10000;
+  opacity: 0;
+}
+
+.dropdownMenu{
+  position: fixed;
+  width: 15%; /*210px;*/
+  margin-left: 0px;
+  overflow:hidden;
+  height: 100vh;
+  background-color: rgba(17, 17, 17, 0.9);
+  opacity: 0.9;
+  transition: all 0.3s ease-in-out;
+
+}
+#fa_times{
+  font-size: 22px;
+}
+.fa-times{
+  right: 10px;
+  top: 10px;
+  opacity: 0.7;
+  cursor: pointer;
+  position: absolute;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.fa-times:hover{
+  opacity: 1.1;
+}
+
+.itensCaixa{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 25px;
+  color: white;
+  padding: 10px 12px;
+  display: inline-block;
+  border: solid 1px white;
+  box-sizing: border-box;
+  text-align: center;
+  margin-top: 70px;
+  cursor: pointer;
+
+}
+
+.topMenuSelecao{
+  margin: 20px 0;
+  display: block;
+  width: 200px;
+  margin-left: 20px;
+}
+
+.topMenuItem{
+  margin: 20px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 25px;
+  color: white;
+  padding: 12px 0;
+  box-sizing: border-box;
+  border-bottom: solid 1px #D8D8D8;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+
+}
+.topMenuItem:hover{
+  background-color: white;
+  color: #111;
+  transition: all 0.3s ease-in-out;
+
+}
+
+.escondeMenu{
+  margin-left: -210px;
+}
+
+.opacidadeUm{
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+.imgContact{
+  margin-top: 8%;
+  width: 50%;
+  margin-left: 21%;
+}
+
+.imageContact{
+  width: 7%;
+  padding: 1%;
+  margin-left: 15%;
+  opacity: 0.85;
+  transition: all 0.4s ease-in-out;
+}
+.imageContact:hover{
+  opacity: 1;
+  transition: all 0.4s ease-in-out;
+}
+.textResume{
+  margin-left: 0px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+
+}
+.textResume:hover{
+  margin-left: 35px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+
+}
+
+#Resume{
+  margin-top: 130px;
+}
+
+@media screen and (max-width: 768px){
+  #imgHTML{
+    width: 100%;
+    height: 260px;
+  }
+
+  .topH1{
+    font-size: 25px;
+  }
+
+  .textoDentro{
+    width: 70%;
+    margin: 6.25% auto 5% auto;
+  }
+
+  .text{
+    font-size: 16px;
+  }
+
+  #me{
+    width: 35%;
+    height: 100px;
+  }
+
+  .imageLogo{
+    width: 11%;
+    padding: 8px;
+    margin: 20px;
+    margin-left: 15px;
+  }
+  .dropdownMenu{
+    position: fixed;
+    width: 100vh; /*210px;*/
+    margin-left: 0px;
+    height: 14%;
+  }
+  .topMenuItem{
+    font-size: 14px;
+    padding: 5px 0;
+    border-bottom: solid 1px #D8D8D8;
+    float: left;
+    margin-left: 8%;
+  }
+  .topMenuSelecao{
+    display: block;
+    width: 70%;
+    height: 15%;
+    margin: 0 0;
+    margin-left: 5%;
+    }
+  }
+
+}
