@@ -240,9 +240,9 @@ li{
   }
   .dropdownMenu{
     position: fixed;
-    width: 100vh; /*210px;*/
+    width: 100vh;
     margin-left: 0px;
-    height: 14%;
+    height: 10%;
   }
   .topMenuItem{
     font-size: 14px;
@@ -257,7 +257,11 @@ li{
     height: 15%;
     margin: 0 0;
     margin-left: 5%;
-    }
+  }
+
+  .imageContact{
+    width: 18%;
+    margin-left: 15%;
   }
 
 }
