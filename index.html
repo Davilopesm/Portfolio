@@ -8,6 +8,8 @@
 
     <meta charset="utf-8"/>
     <link rel="stylesheet" type="text/css" href="css_portfolio.css"/>
+    <!-- Latest compiled and minified CSS  BOOTSTRAP -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700" rel="stylesheet">
     <script
@@ -19,81 +21,110 @@
   </head>
 
   <body onload="$(window).resize()">
-    <i class="fa fa-bars barMenu" style="font-size: 25px;"></i>
-    <div class="dropdownMenu">
-      <i id="fa_times" class="fa fa-times"></i>
-      <div id="div1" style="text-align: center">
-        <a id="topMenuHome" ><h1 class="itensCaixa">Davi <span style="color: #C0C0C0">Mezencio</span></h1></a>
-      </div>
 
-      <ul class="topMenuSelecao">
-        <a id="topMenuAbout"><li class="topMenuItem"> About</li></a>
-        <a id="topMenuResume"><li class="topMenuItem"> Resume</li></a>
-        <a id="topMenuSkills"><li class="topMenuItem"> Skills</li></a>
-        <a id="topMenuContact"><li class="topMenuItem"> Contact</li></a>
-      </ul>
+    <div class="container-fluid">
+      <div class="row">
 
+       <i class="fa fa-bars barMenu" style="font-size: 25px;"></i>
+        <div class="dropdownMenu">
+        <!--  <i id="fa_times" class="fa fa-times"></i> -->
+          <div id="div1" style="text-align: center">
+            <a id="topMenuHome" ><h1 class="itensCaixa">Davi <span style="color: #C0C0C0">Mezencio</span></h1></a>
+          </div>
 
-    </div>
-
-
-    <!--<div id="topBar">
-        <nav id="topMenu">
-          <ul style="cursor: pointer;">
-            <a id="topMenuAbout"><li> About</li></a>
-            <a id="topMenuResume"><li> Resume</li></a>
-            <a id="topMenuSkills"><li> Skills</li></a>
-            <a id="topMenuContact"><li> Contact</li></a>
+          <ul class="topMenuSelecao">
+            <a id="topMenuAbout"><li class="topMenuItem"> About</li></a>
+            <a id="topMenuResume"><li class="topMenuItem"> Resume</li></a>
+            <a id="topMenuSkills"><li class="topMenuItem"> Skills</li></a>
+            <a id="topMenuContact"><li class="topMenuItem"> Contact</li></a>
           </ul>
-        </nav>
-    </div>-->
-
-    <div id="imgHTML">
-    </div>
-    <br />
-    <div class="textoDentro">
-      <h1 id="About" class="topH1"> About Me </h1>
-      <img id="me" src="https://scontent.fcpq5-1.fna.fbcdn.net/v/t1.0-9/16508923_1261638333929715_4537873925548151686_n.jpg?oh=829f08ae9591b9fc8c473773d754eef2&oe=59D79CC1"/>
-      <div id="aboutText">
-        <p class="text"> Welcome, i am Davi Lopes Mezencio, a 21 years old software developer and technology enthusiast from São Paulo, Brazil. I always had a passion for discovering new ways to make life easier, at the age of 17 i discovered the wondeful world of software development and it was love at first sight. Since then im always studying and practicing to be better and help others get better too. </p>
-      </div>
-    </div>
-    <br />
-
-    <div class="textoDentro">
-      <h1 id="Resume" class="topH1"> Resume </h1>
-      <br />
-      <br />
-      <p  class="text textResume"><span style="font-weight: 800;">2015 - 2016</span> - Studying Computer Science at Universidade Federal de Goias</p>
-      <br />
-      <p  class="text textResume"><span style="font-weight: 800;">2016 - Present</span> - Studying Information Systems at Universidade Estadual de Campinas</p>
-      <br />
-      <p  class="text textResume"><span style="font-weight: 800;">2017 - Present</span> - Freelancer on various websites </p>
-    </div>
-    <br />
-    <div class="textoDentro">
-      <h1 id="Skills" class="topH1" style="margin-top: 130px; margin-bottom:80px;"> Skills </h1>
-      <img class="imageLogo" src="http://www.sitesbyirala.hol.es/img/home-html5-logo.png" title="HTML5"/>
-      <img class="imageLogo" src="http://www.sitesbyirala.hol.es/img/home-css3-logo.png" title="CSS3"/>
-      <img class="imageLogo" src="http://www.sitesbyirala.hol.es/img/home-javascript-logo.png" title="JavaScript"/>
-      <img class="imageLogo" src="http://www.sitesbyirala.hol.es/img/home-jquery-logo.png" title="JQuery"/>
-      <img class="imageLogo" src="https://www.brandsoftheworld.com/sites/default/files/styles/logo-thumbnail/public/042014/c_0.png?itok=NGrw5nRV" title="C++"/>
-    </div>
-    <br />
-    <div class="textoDentro">
-      <h1 id="Contact" class="topH1" style="margin-top: 130px; margin-bottom:80px;"> Contact </h1>
-      <p class="text"> I would love to help you, contact me and we can discuss anything you want and need. Go ahead, i'm waiting to hear from you.</p>
-      <br />
-      <div class="imgContact">
-        <a href="https://www.facebook.com/davimezenciol"><img class="imageContact" src="https://image.freepik.com/free-icon/facebook-symbol_318-37686.jpg"/></a>
-        <a href="https://twitter.com/davilopesm"><img class="imageContact" src="http://www.iconsdb.com/icons/preview/black/twitter-3-xxl.png"/></a>
-        <a href="https://github.com/davilopesm"><img class="imageContact" src="http://www.iconsdb.com/icons/preview/black/github-6-xxl.png"/></a>
-        <a href="mailto:dalomester@gmail.com?Subject=PortFolio" target="_top"><img class="imageContact" src="http://icon-icons.com/icons2/791/PNG/512/gmail_icon-icons.com_65490.png"/></a>
-      </div>
-
-    </div>
 
 
+        </div>
+
+
+        <!--<div id="topBar">
+            <nav id="topMenu">
+              <ul style="cursor: pointer;">
+                <a id="topMenuAbout"><li> About</li></a>
+                <a id="topMenuResume"><li> Resume</li></a>
+                <a id="topMenuSkills"><li> Skills</li></a>
+                <a id="topMenuContact"><li> Contact</li></a>
+              </ul>
+            </nav>
+        </div>-->
+        <div class="col-sm-12 col-md-12 col-xs-12 col-lg-12">
+          <div id="passionateDeveloper">
+            <img class="img-responsive" src="imagens/hiiamdavilopes.png"/>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-12 col-xs-12 textoDentro" >
+          <h1 id="About" class="topH1"> About Me </h1>
+          <div id="me"> <img class="img-responsive" src="https://scontent.fcpq5-1.fna.fbcdn.net/v/t1.0-9/16508923_1261638333929715_4537873925548151686_n.jpg?oh=829f08ae9591b9fc8c473773d754eef2&oe=59D79CC1"/>
+          </div>
+          <div id="aboutText">
+            <p class="text"> Welcome, i am Davi Lopes Mezencio, a 21 years old software developer and technology enthusiast from São Paulo, Brazil. I always had a passion for discovering new ways to make life easier, at the age of 17 i discovered the wondeful world of software development and it was love at first sight. Since then im always studying and practicing to be better and help others get better too. </p>
+          </div>
+        </div>
+        <div class=" col-sm-12 col-md-12 col-xs-12 textoDentro">
+          <h1 id="Resume" class="topH1"> Resume </h1>
+          <br />
+          <p  class="text textResume"><span style="font-weight: 800;">2015 - 2016</span> - Studying Computer Science at Universidade Federal de Goias</p>
+          <br />
+          <p  class="text textResume"><span style="font-weight: 800;">2016 - Present</span> - Studying Information Systems at Universidade Estadual de Campinas</p>
+          <br />
+          <p  class="text textResume"><span style="font-weight: 800;">2017 - Present</span> - Freelancer on various websites </p>
+        </div>
+
+        <div class="  col-sm-12 col-md-12 col-xs-12 textoDentro">
+          <h1 id="Skills" class="topH1"> Skills </h1>
+          <br />
+          <br />
+
+          <div id="logoHTML">
+            <img class="img-responsive" src="imagens/home-html5-logo.png" title="HTML5"/>
+          </div>
+
+          <div id="logoCSS">
+            <img class="img-responsive" src="imagens/home-css3-logo.png" title="CSS3"/>
+          </div>
+          <div id="logoJS">
+            <img class="img-responsive" src="imagens/home-javascript-logo.png" title="JavaScript"/>
+          </div>
+          <div id="logoJQUERY">
+            <img class="img-responsive" src="imagens/home-jquery-logo.png" title="JQuery"/>
+          </div>
+          <div id="logoC">
+            <img class="img-responsive" src="imagens/c_0.png" title="C++"/>
+          </div>
+        </div>
+
+        <br />
+
+        <div class=" col-sm-12 col-md-12 col-xs-12 textoDentro">
+          <h1 id="Contact" class="topH1"> Contact </h1>
+          <p id="contactText" class="text"> I would love to help you, contact me and we can discuss anything you want and need. Go ahead, i'm waiting to hear from you.</p>
+          <br />
+          <br />
+          <div id="imgFace" class="imageContact">
+            <a href="https://www.facebook.com/davimezenciol"><img class=" img-responsive" src="imagens/facebook-symbol_318-37686.jpg"/></a>
+          </div>
+          <div id="imgTwitter" class="imageContact">
+            <a href="https://twitter.com/davilopesm"><img class="img-responsive" src="imagens/twitter-3-xxl.png"/></a>
+          </div>
+          <div id="imgGit" class="imageContact">
+            <a href="https://github.com/davilopesm"><img class="img-responsive" src="imagens/github-6-xxl.png"/></a>
+          </div>
+          <div id="imgGmail" class="imageContact">
+            <a href="mailto:dalomester@gmail.com?Subject=PortFolio" target="_top"><img class="img-responsive" src="imagens/gmail_icon-icons.com_65490.png"/></a>
+          </div>
+        </div>
+
+        </div>
+    </div>
+
+  </div>
 
   </body>
 

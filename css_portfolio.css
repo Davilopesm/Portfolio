@@ -3,11 +3,9 @@
   margin: 0;
   padding: 0;
 }
-#imgHTML{
-  width: 100%;
-  height: 800px;
-  background: url(imagens/hiiamdavilopes.png);
-  background-size: cover;
+
+#passionateDeveloper{
+
 }
 #topBar{
   background: black;
@@ -37,31 +35,34 @@
   margin-right: 25%;
 }
 .textoDentro{
-  width: 800px;
-  margin: 50px auto 40px auto;
-
+/*  width: 50%;*/
+  padding: 5%;
+  margin: 5% auto 5% auto;
 }
 .topH1{
   font-family: 'Josefin Sans', sans-serif;
   font-size: 45px;
   text-align: center;
   font-weight:bold;
-  padding: 5px 0;
+  /*padding: 5px 0;*/
 }
 .text{
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 21px;
+  font-size: 24px;
   margin: 20px;
 }
 
 #me{
+  width: 20%;
+  margin-left: 15%;
   float: left;
-  width: 220px;
-  height: 220px;
-  margin: 20px 16px 10px 0;
+  margin-right: 2%;
 }
 #aboutText{
-  padding: 20px;
+  padding: 2%;
+  padding-left: 5%;
+  width: 60%;
+  margin-left: 26%;
 }
 a{
   color: inherit;
@@ -73,11 +74,31 @@ a:hover{
   transition: all 0.3s ease-in-out;
 }
 
-.imageLogo{
-  width: 100px;
-  padding: 8px;
-  margin: 20px;
-  margin-left: 15px;
+#logoHTML{
+  width: 10%;
+  display: inline-block;
+  margin-left: 20%;
+}
+
+#logoCSS{
+  width: 10%;
+  display: inline-block;
+  margin-left: 2%;
+}
+#logoJS{
+  width: 10%;
+  display: inline-block;
+  margin-left: 2%;
+}
+#logoJQUERY{
+  width: 10%;
+  display: inline-block;
+  margin-left: 2%;
+}
+#logoC{
+  width: 10%;
+  display: inline-block;
+  margin-left: 2%;
 }
 
 li{
@@ -90,7 +111,7 @@ li{
 .barMenu{
   position: fixed;
   padding: 15px 20px 15px 15px;
-  margin-top: 70px; /*169*/
+  margin-top: 17vh; /*169*/
   color: white;
   cursor: pointer;
   background-color:  #C0C0C0;
@@ -107,6 +128,7 @@ li{
   background-color: rgba(17, 17, 17, 0.9);
   opacity: 0.9;
   transition: all 0.3s ease-in-out;
+  z-index: 10000;
 
 }
 #fa_times{
@@ -120,6 +142,7 @@ li{
   position: absolute;
   color: white;
   transition: all 0.3s ease-in-out;
+  z-index: 10000;
 }
 
 .fa-times:hover{
@@ -128,31 +151,30 @@ li{
 
 .itensCaixa{
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 25px;
+  font-size: 1.8em;
   color: white;
   padding: 10px 12px;
   display: inline-block;
   border: solid 1px white;
   box-sizing: border-box;
   text-align: center;
-  margin-top: 70px;
+  margin-top: 35%;
   cursor: pointer;
-
 }
 
 .topMenuSelecao{
-  margin: 20px 0;
+  margin: 10% 0;
   display: block;
-  width: 200px;
-  margin-left: 20px;
+  width: 50%;
+  margin-left: 10%;
 }
 
 .topMenuItem{
-  margin: 20px;
+  margin: 12%;
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 25px;
+  font-size: 1.6em;
   color: white;
-  padding: 12px 0;
+  padding: 1% 0;
   box-sizing: border-box;
   border-bottom: solid 1px #D8D8D8;
   transition: all 0.3s ease-in-out;
@@ -167,23 +189,37 @@ li{
 }
 
 .escondeMenu{
-  margin-left: -210px;
+  margin-left: -100vh;
 }
 
 .opacidadeUm{
   opacity: 1;
   transition: all 0.3s ease-in-out;
 }
-.imgContact{
-  margin-top: 8%;
-  width: 50%;
-  margin-left: 21%;
+
+#imgFace{
+  width: 4%;
+  margin-left: 33.4%;
+  display: inline-block;
+}
+
+#imgTwitter{
+  width: 4%;
+  margin-left: 5%;
+  display: inline-block;
+}
+#imgGit{
+  width: 4%;
+  margin-left: 5%;
+  display: inline-block;
+}
+#imgGmail{
+  width: 4%;
+  margin-left: 5%;
+  display: inline-block;
 }
 
 .imageContact{
-  width: 7%;
-  padding: 1%;
-  margin-left: 15%;
   opacity: 0.85;
   transition: all 0.4s ease-in-out;
 }
@@ -192,10 +228,10 @@ li{
   transition: all 0.4s ease-in-out;
 }
 .textResume{
+  padding-left: 15%;
   margin-left: 0px;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
-
 }
 .textResume:hover{
   margin-left: 35px;
@@ -204,64 +240,36 @@ li{
 
 }
 
-#Resume{
-  margin-top: 130px;
+#contactText{
+    margin-top: 3%;
+    margin-left: 15%;
+    margin-right: 14%;
 }
 
-@media screen and (max-width: 768px){
-  #imgHTML{
-    width: 100%;
-    height: 260px;
-  }
 
-  .topH1{
-    font-size: 25px;
-  }
-
-  .textoDentro{
-    width: 70%;
-    margin: 6.25% auto 5% auto;
-  }
-
+/* xs < 768*/
+@media screen and (max-width: 767px) {
   .text{
-    font-size: 16px;
+    font-size: 1.2em;
   }
+}
 
-  #me{
-    width: 35%;
-    height: 100px;
+/* sm */
+@media screen and (min-width: 768px) {
+  .text{
+    font-size: 1.4em;
   }
+}
 
-  .imageLogo{
-    width: 11%;
-    padding: 8px;
-    margin: 20px;
-    margin-left: 15px;
+ /*md*/
+@media screen and (min-width: 992px) {
+  .text{
+    font-size: 1.6em;
   }
-  .dropdownMenu{
-    position: fixed;
-    width: 100vh;
-    margin-left: 0px;
-    height: 10%;
-  }
-  .topMenuItem{
-    font-size: 14px;
-    padding: 5px 0;
-    border-bottom: solid 1px #D8D8D8;
-    float: left;
-    margin-left: 8%;
-  }
-  .topMenuSelecao{
-    display: block;
-    width: 70%;
-    height: 15%;
-    margin: 0 0;
-    margin-left: 5%;
-  }
-
-  .imageContact{
-    width: 18%;
-    margin-left: 15%;
-  }
-
+}
+/* lg */
+@media screen and (min-width: 1200px) {
+    body {
+        font-size: 1.8em;
+    }
 }

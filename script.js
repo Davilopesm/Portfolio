@@ -1,29 +1,14 @@
 $(document).ready(function(){
 
-  //drop down menu
-  //$(window).scroll(function(){
-    //var scrollPos = $(this).scrollTop();
+  $(".fa-times").click(function(){
+    $(".dropdownMenu").addClass("escondeMenu");
+    $(".barMenu").addClass("opacidadeUm");
+  });
 
-  //  if(scrollPos > 80){
-      //$(".barMenu").show();
-    //  $(".dropdownMenu").show();
-      $(".fa-times").click(function(){
-        $(".dropdownMenu").addClass("escondeMenu");
-        $(".barMenu").addClass("opacidadeUm");
-      });
-
-      $(".barMenu").click(function(){
-        $(".dropdownMenu").removeClass("escondeMenu");
-        $(".barMenu").removeClass("opacidadeUm");
-
-
-      });
-
-    //}else{
-    //  $(".barMenu").hide();
-      //$(".dropdownMenu").hide();
-
-  //});
+  $(".barMenu").click(function(){
+    $(".dropdownMenu").removeClass("escondeMenu");
+    $(".barMenu").removeClass("opacidadeUm");
+  });
 
   //scroll down
   $("#topMenuHome").click(function() {
