@@ -88,6 +88,25 @@ $(document).ready(function(){
     });
   }   // It’s a tablet
 
+  /****** EMAIL ****/
+  $('#contatoForm').submit(function() {
+    var nome = $('#Nome');
+      email = $('#Email'),
+      mensagem = $('#Mensagem');
+
+    if( !email.val() || !mensagem.val() ){
+      alert("Veja se digitou todos os campos");
+      return false;
+    }
+    else{
+      $.ajax({
+        url: "https://formspree.io/dalomester@gmail.com",
+        method: "POST",
+        data: $('#contatoForm').serialize(),
+        dataType: "json"
+    });
+      alert("Mensagem Enviada");
+    }
 
 
 
