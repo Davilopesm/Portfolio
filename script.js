@@ -90,7 +90,7 @@ $(document).ready(function(){
 
   /****** EMAIL ****/
   $('#contatoForm').submit(function() {
-    var nome = $('#Nome');
+    var nome = $('#Nome'),
       email = $('#Email'),
       mensagem = $('#Mensagem');
 
