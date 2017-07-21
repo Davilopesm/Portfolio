@@ -592,7 +592,7 @@
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width :480px){
   #toggle-sidebar{
-    font-size: 13px;
+    font-size: 14px;
     opacity: 0.8;
     margin-top: 4%;
   }
@@ -846,7 +846,7 @@
   footer{
     width: 100%;
     position: absolute;
-    margin-top: 620%;
+    margin-top: 636%;
     background: #C0C0C0;
     opacity: 0.8;
 

@@ -91,8 +91,8 @@ $(document).ready(function(){
   /****** EMAIL ****/
   $('#contatoForm').submit(function() {
     var nome = $('#Nome');
-      email = $('#Email'),
-      mensagem = $('#Mensagem');
+    var  email = $('#Email');
+    var  mensagem = $('#Mensagem');
 
     if( !email.val() || !mensagem.val() ){
       alert("Veja se digitou todos os campos");
@@ -107,6 +107,7 @@ $(document).ready(function(){
     });
       alert("Mensagem Enviada");
     }
+  });
 
 
 
