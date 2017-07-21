@@ -3,286 +3,1454 @@
   margin: 0;
   padding: 0;
 }
-
-#languageEN{
-  margin-left: 93%;
-  position: absolute;
-  cursor: pointer;
-  color: white;
-  opacity: 0.5;
-  transition: all 0.4s ease-in-out;
-  font-size: 1.1em;
-
-}
-#languagePT{
-  margin-left: 95%;
-  position: absolute;
-  cursor: pointer;
-  color: white;
-  opacity: 0.5;
-  transition: all 0.4s ease-in-out;
-  font-size: 1.1em;
-
-}
-
-#languageEN:hover{
+#toggle-sidebar{
+  font-size: 22px;
+  margin-top: 5%;
   opacity: 0.8;
-  transition: all 0.4s ease-in-out;
-}
-#languagePT:hover{
-  opacity: 0.8;
-  transition: all 0.4s ease-in-out;
-}
-#topBar{
-  background: black;
-  height: 25%;
-  border-bottom: 2px solid #C0C0C0;
-  width: 100%;
-}
-#topLine{
-  width: 100%;
-  border: 5px solid red;
-}
-.logo{
-  font-family: 'Josefin Sans', sans-serif;
-  color: #C0C0C0;
-  float: left;
-  padding: 10px;
-  margin-top: 5px;
-  cursor: pointer;
-}
-#topMenu{
-  float: right;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 16px;
-  color:white;
-  padding: 20px 20px;
-  margin-top: 2px;
-  margin-right: 25%;
-}
-.textoDentro{
-/*  width: 50%;*/
-  padding: 5%;
-  margin: 5% auto 5% auto;
-}
-.topH1{
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 45px;
-  text-align: center;
-  font-weight:bold;
-  /*padding: 5px 0;*/
-}
-.text{
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 24px;
-  margin: 20px;
-}
-
-#me{
-  width: 20%;
-  margin-left: 15%;
-  float: left;
-  margin-right: 2%;
-}
-#aboutText{
-  padding: 2%;
-  padding-left: 5%;
-  width: 60%;
-  margin-left: 26%;
-}
-a{
-  color: inherit;
-  text-decoration: none;
-}
-
-a:hover{
-  color: #C0C0C0;
-  transition: all 0.3s ease-in-out;
-}
-
-#logoHTML{
-  width: 10%;
-  display: inline-block;
-  margin-left: 20%;
-}
-
-#logoCSS{
-  width: 10%;
-  display: inline-block;
-  margin-left: 2%;
-}
-#logoJS{
-  width: 10%;
-  display: inline-block;
-  margin-left: 2%;
-}
-#logoJQUERY{
-  width: 10%;
-  display: inline-block;
-  margin-left: 2%;
-}
-#logoC{
-  width: 10%;
-  display: inline-block;
-  margin-left: 2%;
-}
-
-li{
-  list-style: none;
-  float: left;
-  padding: 4px;
-
-}
-
-.barMenu{
   position: fixed;
-  padding: 15px 20px 15px 15px;
-  margin-top: 17vh; /*169*/
-  color: white;
-  cursor: pointer;
-  background-color:  #C0C0C0;
-  z-index: 10000;
-  opacity: 0;
+  z-index: 100;
 }
 
-.dropdownMenu{
-  position: fixed;
-  width: 15%; /*210px;*/
-  margin-left: 0px;
-  overflow:hidden;
+#toggle-sidebar:hover{
+  opacity: 0.6;
+}
+
+#flyoutMenu{
+  width: 100vw;
   height: 100vh;
-  background-color: rgba(17, 17, 17, 0.9);
+  position: fixed;
+  background-color: #C0C0C0;
+  z-index: 1;
   opacity: 0.9;
-  transition: all 0.3s ease-in-out;
-  z-index: 10000;
-
+  transform: translate3d(-100vw, 0, 0);
+  transition: transform .3s cubic-bezier(0, .52, 0, 1);
+  overflow: hidden;
 }
 
-.itensCaixa{
+#flyoutMenu.show{
+  transform: translate3d(0vw, 0, 0);
+}
+
+#flyoutMenu h2 a{
+  color: #333;
+  margin-left: 18px;
+  margin-top: 15%;
+  text-decoration: none;
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 1.8em;
+  font-style: italic;
+}
+#flyoutMenu h2 a:hover{
+  text-decoration: underline;
+}
+
+#banner{
+  width: 100vw;
+  height: 100vh;
+  background: url('imagens/pexels-photo-48606.png') no-repeat;
+  background-size: 100%;
+}
+
+.textDeveloper{
+  margin-top: 19%;
+  margin-left: 17%;
   color: white;
-  padding: 10px 12px;
-  display: inline-block;
-  border: solid 1px white;
-  box-sizing: border-box;
-  text-align: center;
-  margin-top: 35%;
-  cursor: pointer;
-}
-
-.topMenuSelecao{
-  margin: 10% 0;
-  display: block;
-  width: 50%;
-  margin-left: 10%;
-}
-
-.topMenuItem{
-  margin: 12%;
+  font-size: 5em;
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 1.6em;
+  font-weight: 600;
+  font-style: italic;
+}
+.textDeveloper2{
+  margin-top: 29%;
+  margin-left: 39%;
   color: white;
-  padding: 1% 0;
-  box-sizing: border-box;
-  border-bottom: solid 1px #D8D8D8;
-  transition: all 0.3s ease-in-out;
-  cursor: pointer;
-
-}
-.topMenuItem:hover{
-  background-color: white;
-  color: #111;
-  transition: all 0.3s ease-in-out;
-
-}
-
-#imgFace{
-  width: 4%;
-  margin-left: 33.4%;
-  display: inline-block;
-}
-
-#imgTwitter{
-  width: 4%;
-  margin-left: 5%;
-  display: inline-block;
-}
-#imgGit{
-  width: 4%;
-  margin-left: 5%;
-  display: inline-block;
-}
-#imgGmail{
-  width: 4%;
-  margin-left: 5%;
-  display: inline-block;
-}
-
-.imageContact{
-  opacity: 0.85;
-  transition: all 0.4s ease-in-out;
-}
-.imageContact:hover{
-  opacity: 1;
-  transition: all 0.4s ease-in-out;
-}
-.textResume{
-  padding-left: 15%;
-  margin-left: 0px;
-  cursor: pointer;
-  transition: all 0.5s ease-in-out;
-}
-.textResume:hover{
-  margin-left: 35px;
-  cursor: pointer;
-  transition: all 0.5s ease-in-out;
-
-}
-
-#contactText{
-    margin-top: 3%;
-    margin-left: 15%;
-    margin-right: 14%;
+  font-size: 4.5em;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600;
+  font-style: italic;
 }
 
 
-/* xs < 768*/
-@media screen and (max-width: 767px) {
-  .text{
-    font-size: 1.2em;
+
+
+
+
+
+/******************************* QUERIES*********************************/
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) {
+  #toggle-sidebar{
+    font-size: 14px;
+    opacity: 0.8;
+    margin-top: 4%;
   }
-  .topH1{
-    font-size: 2.2em;
+  #flyoutMenu h2 a{
+    font-size: 17px;
+  }
+  #flyoutMenu h2 a:hover{
+    text-decoration: underline;
+
+  }
+  #banner{
+    width: 100vw;
+    height: 100vh;
+    background: url('imagens/pexels-photo-48606.png') no-repeat;
+    background-size: 110%;
+    position: absolute;
   }
 
-}
+  .textDeveloper{
+    margin-top: 25%;
+    margin-left: 17%;
+    font-size: 28px;
 
-/* sm */
-@media screen and (min-width: 768px) {
-  .text{
-    font-size: 1.4em;
   }
-  .topH1{
+  .textDeveloper2{
+    margin-top: 26%;
+    margin-left: 30%;
+    font-size: 26px;
+  }
+  /******************************* SOBRE **********************************/
+  #about{
+    margin-top: 67%;
+    position: absolute;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  #headerAbout{
+    margin-left: 43%;
     font-size: 2.4em;
+    font-weight: bold;
   }
+
+  #photo{
+    background: url('imagens/Me.jpg');
+    background-size: cover;
+    height: 58vh;
+    width: 37vw;
+    margin-left: 31%;
+    margin-top: 5%;
+    border-radius: 3%;
+  }
+  #aboutText{
+    margin-top: 2%;
+    margin-left: 1%;
+    font-size: 1.2em;
+    text-align: center;
+  }
+
+  /********************************* RESUME ****************/
+  #resume{
+  margin-top: 145%;
+  position: absolute;
+  font-family: 'Josefin Sans', sans-serif;
+  }
+  #headerResume{
+    margin-left: 43%;
+    font-size: 2.4em;
+    font-weight: bold;
+  }
+  #textResume{
+    margin-top: 7%;
+  }
+  .fieldResume{
+    text-align: left;
+    font-size: 1.3em;
+    margin-left: 6.5%;
+    cursor: pointer;
+    transition: all 0.6s ease-in-out;
+
+  }
+  .fieldResume:hover{
+    margin-left: 8.5%;
+    cursor: pointer;
+    transition: all 0.6s ease-in-out;
+  }
+
+    /********************************* SKILLS ****************/
+
+    #skills{
+      margin-top: 209%;
+      position: absolute;
+      font-family: 'Josefin Sans', sans-serif;
+    }
+    #headerSkills{
+      margin-left: 47%;
+      font-size: 2.4em;
+      font-weight: bold;
+    }
+    #imgSkills{
+      margin-top: 7%;
+      margin-left: 9%;
+    }
+    #imgSkills2{
+      margin-top: 7%;
+      margin-left: 14%;
+      margin-right: 11%;
+    }
+    .imgSkillsHover{
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 1.8em;
+      position: relative;
+      font-weight: bold;
+    }
+    .contentHTML{
+      position: absolute;
+      top: 20px;
+      left: 22%;
+      opacity: 0;
+      transition: all 0.4s ease-in-out;
+    }
+    .imgSkillsHover:hover .contentHTML{
+      opacity: 1;
+    }
+    .contentCSS{
+      position: absolute;
+      top: 18px;
+      left: 29%;
+      opacity: 0;
+      transition: all 0.4s ease-in-out;
+    }
+    .imgSkillsHover:hover .contentCSS{
+      opacity: 1;
+    }
+    .contentJS{
+      position: absolute;
+      font-size: 0.9em;
+      top: 19%;
+      left: 20%;
+      opacity: 0;
+      transition: all 0.4s ease-in-out;
+    }
+    .imgSkillsHover:hover .contentJS{
+      opacity: 1;
+    }
+    .contentJQuery{
+      position: absolute;
+      top: 22%;
+      left:26%;
+      opacity: 0;
+      transition: all 0.4s ease-in-out;
+    }
+    .imgSkillsHover:hover .contentJQuery{
+      opacity: 1;
+    }
+    .contentBootstrap{
+      position: absolute;
+      font-size: 0.9em;
+      top: 27%;
+      left:22%;
+      opacity: 0;
+      transition: all 0.4s ease-in-out;
+    }
+    .imgSkillsHover:hover .contentBootstrap{
+      opacity: 1;
+    }
+    .contentReact{
+      position: absolute;
+      top: 27%;
+      left: 26%;
+      opacity: 0;
+      transition: all 0.4s ease-in-out;
+    }
+    .imgSkillsHover:hover .contentReact{
+      opacity: 1;
+    }
+    .contentCPlusPlus{
+      position: absolute;
+      top: 27%;
+      left: 35%;
+      opacity: 0;
+      transition: all 0.4s ease-in-out;
+    }
+    .imgSkillsHover:hover .contentCPlusPlus{
+      opacity: 1;
+    }
+    /********************* WORK ***********************/
+
+    #work{
+      margin-top: 278%;
+      position: absolute;
+      font-family: 'Josefin Sans', sans-serif;
+    }
+    #headerWork{
+      margin-left: 277%;
+      font-size: 2.4em;
+      font-weight: bold
+    }
+    #pradalServicos{
+      margin-top: 10%;
+      margin-left: 360%;
+      width: 80px;
+      height: auto;
+    }
+    #appear_image_div{
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      z-index: 10;
+      opacity: 0.7;
+      background: #002447;
+    }
+    #appear_image{
+      width: 320px;
+      display: block;
+      height: auto;
+      margin-left: 25%;
+      margin-top: 260%;
+      position: absolute;
+      z-index: 11;
+    }
+    #closeImg{
+      position: fixed;
+      z-index: 12;
+      top: 20px;
+      right: 20px;
+      cursor: pointer;
+      font-size: 24px;
+    }
+    #closeImg:hover{
+      opacity: 0.8;
+    }
+
+      /********************* WORK ***********************/
+
+      #work{
+        margin-top: 278%;
+        position: absolute;
+        font-family: 'Josefin Sans', sans-serif;
+      }
+      #headerWork{
+        margin-left: 215%;
+        font-size: 2.4em;
+        font-weight: bold
+      }
+      #pradalServicos{
+        margin-top: 10%;
+        margin-left: 255%;
+        width: 100px;
+        height: auto;
+      }
+      #appear_image_div{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: 10;
+        opacity: 0.7;
+        background: #002447;
+      }
+      #appear_image{
+        width: 420px;
+        display: block;
+        height: auto;
+        margin-left: 20%;
+        margin-top: 270%;
+        position: absolute;
+        z-index: 11;
+      }
+      #closeImg{
+        position: fixed;
+        z-index: 12;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+        font-size: 24px;
+      }
+      #closeImg:hover{
+        opacity: 0.8;
+      }
+
+      /**********  CONTACT ************/
+      #contato{
+        margin-top: 350%;
+        position: absolute;
+        font-family: 'Josefin Sans', sans-serif;
+      }
+      #headerContato{
+        margin-left: 41.8%;
+        font-size: 2.4em;
+        font-weight: bold
+      }
+      #contatoForm{
+        margin-top: 5%;
+      }
+      #textContato{
+        font-size: 1.4em;
+      }
+      #findMe{
+        font-size: 20px;
+      }
+      /****************  FOOOTER **************/
+      footer{
+        width: 100%;
+        margin-top: 374%;
+        background: #C0C0C0;
+        opacity: 0.8;
+        position: fixed;
+      }
+      .footerItens:hover{
+        opacity: 0.7;
+        color: inherit;
+        transition: all 0.3s ease-in-out;
+      }
+      #desenvolvido{
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 14px;
+      }
+
+
 }
 
- /*md*/
-@media screen and (min-width: 992px) {
-  .text{
-    font-size: 1.6em;
+/*IPHONE 5 CAGADAO *****************/
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+  #toggle-sidebar{
+    font-size: 13px;
+    opacity: 0.8;
+    margin-top: 4%;
   }
-  .topH1{
-    font-size: 2.6em;
+  #flyoutMenu h2 a{
+    font-size: 16px;
   }
+
+  #banner{
+    width: 100vw;
+    height: 50vh;
+    background: url('imagens/pexels-photo-48606.png') no-repeat;
+    background-size: 110%;
+    position: absolute;
+  }
+
+  .textDeveloper{
+    margin-top: 29%;
+    margin-left: 6%;
+    font-size: 18px;
+
+  }
+  .textDeveloper2{
+    margin-top: 26%;
+    margin-left: 24%;
+    font-size: 17px;
+  }
+
+  /******************************* SOBRE **********************************/
+  #about{
+    margin-top: 90%;
+    position: absolute;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  #headerAbout{
+    margin-left: 41%;
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+  #photo{
+    background: url('imagens/Me.jpg');
+    background-size: cover;
+    height: 20vh;
+    width: 37vw;
+    margin-left: 31%;
+    margin-top: 5%;
+    border-radius: 3%;
+  }
+  #aboutText{
+    margin-top: 2%;
+    margin-left: 0;
+    font-size: 1.2em;
+    text-align: center;
+  }
+  /********************************* RESUME ****************/
+  #resume{
+  margin-top: 245%;
+  position: absolute;
+  font-family: 'Josefin Sans', sans-serif;
+  }
+  #headerResume{
+    margin-left: 35%;
+    font-size: 2em;
+    font-weight: bold;
+  }
+  #textResume{
+    margin-top: 5%;
+  }
+  .fieldResume{
+    text-align: left;
+    font-size: 0.9em;
+    margin-left: 2.5%;
+    cursor: pointer;
+    transition: all 0.6s ease-in-out;
+
+  }
+  .fieldResume:hover{
+    margin-left: 3.5%;
+    cursor: pointer;
+    transition: all 0.6s ease-in-out;
+  }
+
+  /********************************* SKILLS ****************/
+
+  #skills{
+    margin-top: 329%;
+    position: absolute;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  #headerSkills{
+    margin-left: 42%;
+    font-size: 2em;
+    font-weight: bold;
+  }
+  #imgSkills{
+    margin-top: 7%;
+    margin-left: 0.5%;
+  }
+  #imgSkills2{
+    margin-top: 7%;
+    margin-left: 9%;
+    margin-right: 9%;
+  }
+  .imgSkillsHover{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1em;
+    position: relative;
+    font-weight: bold;
+  }
+  .contentHTML{
+    position: absolute;
+    top: 18px;
+    left: 22%;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+  }
+  .imgSkillsHover:hover .contentHTML{
+    opacity: 1;
+  }
+  .contentCSS{
+    position: absolute;
+    top: 18px;
+    left: 29%;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+  }
+  .imgSkillsHover:hover .contentCSS{
+    opacity: 1;
+  }
+  .contentJS{
+    position: absolute;
+    font-size: 0.9em;
+    top: 19%;
+    left: 20%;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+  }
+  .imgSkillsHover:hover .contentJS{
+    opacity: 1;
+  }
+  .contentJQuery{
+    position: absolute;
+    top: 22%;
+    left:26%;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+  }
+  .imgSkillsHover:hover .contentJQuery{
+    opacity: 1;
+  }
+  .contentBootstrap{
+    position: absolute;
+    font-size: 0.9em;
+    top: 27%;
+    left:22%;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+  }
+  .imgSkillsHover:hover .contentBootstrap{
+    opacity: 1;
+  }
+  .contentReact{
+    position: absolute;
+    top: 27%;
+    left: 26%;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+  }
+  .imgSkillsHover:hover .contentReact{
+    opacity: 1;
+  }
+  .contentCPlusPlus{
+    position: absolute;
+    top: 27%;
+    left: 35%;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+  }
+  .imgSkillsHover:hover .contentCPlusPlus{
+    opacity: 1;
+  }
+
+
+
 }
-/* lg */
-@media screen and (min-width: 1200px) {
-    .text{
-        font-size: 1.7em;
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width :480px){
+  #toggle-sidebar{
+    font-size: 13px;
+    opacity: 0.8;
+    margin-top: 4%;
+  }
+  #flyoutMenu h2 a{
+    font-size: 16px;
+  }
+
+  #banner{
+    width: 100vw;
+    height: 50vh;
+    background: url('imagens/pexels-photo-48606.png') no-repeat;
+    background-size: 110%;
+    position: absolute;
+  }
+
+  .textDeveloper{
+    margin-top: 29%;
+    margin-left: 6%;
+    font-size: 18px;
+
+  }
+  .textDeveloper2{
+    margin-top: 26%;
+    margin-left: 24%;
+    font-size: 17px;
+  }
+
+  /******************************* SOBRE **********************************/
+  #about{
+    margin-top: 90%;
+    position: absolute;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  #headerAbout{
+    margin-left: 41%;
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+  #photo{
+    background: url('imagens/Me.jpg');
+    background-size: cover;
+    height: 20vh;
+    width: 37vw;
+    margin-left: 31%;
+    margin-top: 5%;
+    border-radius: 3%;
+  }
+  #aboutText{
+    margin-top: 2%;
+    margin-left: 0;
+    font-size: 1.2em;
+    text-align: center;
+  }
+  /********************************* RESUME ****************/
+  #resume{
+  margin-top: 215%;
+  position: absolute;
+  font-family: 'Josefin Sans', sans-serif;
+  }
+  #headerResume{
+    margin-left: 39.5%;
+    font-size: 2em;
+    font-weight: bold;
+  }
+  #textResume{
+    margin-top: 5%;
+  }
+  .fieldResume{
+    text-align: left;
+    font-size: 0.8em;
+    margin-left: 2.5%;
+    cursor: pointer;
+    transition: all 0.6s ease-in-out;
+
+  }
+  .fieldResume:hover{
+    margin-left: 3.5%;
+    cursor: pointer;
+    transition: all 0.6s ease-in-out;
+  }
+
+  /********************************* SKILLS ****************/
+
+  #skills{
+    margin-top: 279%;
+    position: absolute;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  #headerSkills{
+    margin-left: 44%;
+    font-size: 2em;
+    font-weight: bold;
+  }
+  #imgSkills{
+    margin-top: 7%;
+    margin-left: 0.5%;
+  }
+  #imgSkills2{
+    margin-top: 7%;
+    margin-left: 9%;
+    margin-right: 9%;
+  }
+  .imgSkillsHover{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1em;
+    position: relative;
+    font-weight: bold;
+  }
+  .contentHTML{
+    position: absolute;
+    top: 20px;
+    left: 22%;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+  }
+  .imgSkillsHover:hover .contentHTML{
+    opacity: 1;
+  }
+  .contentCSS{
+    position: absolute;
+    top: 18px;
+    left: 29%;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+  }
+  .imgSkillsHover:hover .contentCSS{
+    opacity: 1;
+  }
+  .contentJS{
+    position: absolute;
+    font-size: 0.9em;
+    top: 19%;
+    left: 20%;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+  }
+  .imgSkillsHover:hover .contentJS{
+    opacity: 1;
+  }
+  .contentJQuery{
+    position: absolute;
+    top: 22%;
+    left:26%;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+  }
+  .imgSkillsHover:hover .contentJQuery{
+    opacity: 1;
+  }
+  .contentBootstrap{
+    position: absolute;
+    font-size: 0.9em;
+    top: 27%;
+    left:22%;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+  }
+  .imgSkillsHover:hover .contentBootstrap{
+    opacity: 1;
+  }
+  .contentReact{
+    position: absolute;
+    top: 27%;
+    left: 26%;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+  }
+  .imgSkillsHover:hover .contentReact{
+    opacity: 1;
+  }
+  .contentCPlusPlus{
+    position: absolute;
+    top: 27%;
+    left: 35%;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+  }
+  .imgSkillsHover:hover .contentCPlusPlus{
+    opacity: 1;
+  }
+
+  /********************* WORK ***********************/
+
+  #work{
+    margin-top: 368%;
+    position: absolute;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  #headerWork{
+    margin-left: 160%;
+    font-size: 2em;
+    font-weight: bold
+  }
+  #pradalServicos{
+    margin-top: 10%;
+    margin-left: 200%;
+    width: 70px;
+    height: auto;
+  }
+  #appear_image_div{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 10;
+    opacity: 0.7;
+    background: #002447;
+  }
+  #appear_image{
+    width: 220px;
+    display: block;
+    height: auto;
+    margin-left: 20%;
+    margin-top: 310%;
+    position: absolute;
+    z-index: 11;
+  }
+  #closeImg{
+    position: fixed;
+    z-index: 12;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 24px;
+  }
+  #closeImg:hover{
+    opacity: 0.8;
+  }
+
+  /**********  CONTACT ************/
+  #contato{
+    margin-top: 460%;
+    position: absolute;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  #headerContato{
+    margin-left: 38.8%;
+    font-size: 2em;
+    font-weight: bold
+  }
+  #contatoForm{
+    margin-top: 5%;
+  }
+  #textContato{
+    font-size: 1.3em;
+  }
+  #findMe{
+    font-size: 18px;
+  }
+  /****************  FOOOTER **************/
+  footer{
+    width: 100%;
+    position: absolute;
+    margin-top: 620%;
+    background: #C0C0C0;
+    opacity: 0.8;
+
+  }
+
+  .footerItens:hover{
+    opacity: 0.7;
+    color: inherit;
+    transition: all 0.3s ease-in-out;
+  }
+  #desenvolvido{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 9px;
+  }
+
+}
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  #toggle-sidebar{
+    font-size: 26px;
+  }
+  #flyoutMenu h2 a{
+    font-size: 24px;
+  }
+  #banner{
+    width: 100vw;
+    height: 50vh;
+    background: url('imagens/pexels-photo-48606.png') no-repeat;
+    background-size: 110%;
+    position: absolute;
+  }
+
+  .textDeveloper{
+    margin-top: 18%;
+    margin-left: 10%;
+    font-size: 42px;
+
+  }
+  .textDeveloper2{
+    margin-top: 27%;
+    margin-left: 26%;
+    font-size: 40px;
+  }
+
+    /******************************* SOBRE **********************************/
+    #about{
+      margin-top: 80%;
+      position: absolute;
+      font-family: 'Josefin Sans', sans-serif;
     }
-    .topH1{
-      font-size: 3em;
+    #headerAbout{
+      margin-left: 41%;
+      font-size: 4em;
+      font-weight: bold;
     }
+
+    #photo{
+      background: url('imagens/Me.jpg');
+      background-size: cover;
+      height: 26vh;
+      width: 34vw;
+      margin-left: 33%;
+      margin-top: 5%;
+      border-radius: 3%;
+    }
+    #aboutText{
+      margin-top: 2%;
+      margin-left: 1.5%;
+      font-size: 2.2em;
+      text-align: center;
+    }
+
+
+      /********************************* RESUME ****************/
+      #resume{
+      margin-top: 205%;
+      position: absolute;
+      font-family: 'Josefin Sans', sans-serif;
+      }
+      #headerResume{
+        margin-left: 40%;
+        font-size: 4em;
+        font-weight: bold;
+      }
+      #textResume{
+        margin-top: 5%;
+      }
+      .fieldResume{
+        text-align: left;
+        font-size: 1.5em;
+        margin-left: 3%;
+        cursor: pointer;
+        transition: all 0.6s ease-in-out;
+
+      }
+      .fieldResume:hover{
+        margin-left: 4.5%;
+        cursor: pointer;
+        transition: all 0.6s ease-in-out;
+      }
+
+
+      /*************** SKILLS ********************/
+      #skills{
+        margin-top: 265%;
+        position: absolute;
+        font-family: 'Josefin Sans', sans-serif;
+      }
+      #headerSkills{
+        margin-left: 44%;
+        font-size: 4em;
+        font-weight: bold;
+      }
+      #imgSkills{
+        margin-top: 7%;
+        margin-left: 0.5%;
+      }
+      #imgSkills2{
+        margin-top: 7%;
+        margin-left: 9%;
+        margin-right: 9%;
+      }
+      .imgSkillsHover{
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 2em;
+        position: relative;
+        font-weight: bold;
+      }
+      .contentHTML{
+        position: absolute;
+        top: 20px;
+        left: 22%;
+        opacity: 0;
+        transition: all 0.4s ease-in-out;
+      }
+      .imgSkillsHover:hover .contentHTML{
+        opacity: 1;
+      }
+      .contentCSS{
+        position: absolute;
+        top: 18px;
+        left: 29%;
+        opacity: 0;
+        transition: all 0.4s ease-in-out;
+      }
+      .imgSkillsHover:hover .contentCSS{
+        opacity: 1;
+      }
+      .contentJS{
+        position: absolute;
+        font-size: 0.9em;
+        top: 19%;
+        left: 20%;
+        opacity: 0;
+        transition: all 0.4s ease-in-out;
+      }
+      .imgSkillsHover:hover .contentJS{
+        opacity: 1;
+      }
+      .contentJQuery{
+        position: absolute;
+        top: 22%;
+        left:26%;
+        opacity: 0;
+        transition: all 0.4s ease-in-out;
+      }
+      .imgSkillsHover:hover .contentJQuery{
+        opacity: 1;
+      }
+      .contentBootstrap{
+        position: absolute;
+        font-size: 0.9em;
+        top: 27%;
+        left:22%;
+        opacity: 0;
+        transition: all 0.4s ease-in-out;
+      }
+      .imgSkillsHover:hover .contentBootstrap{
+        opacity: 1;
+      }
+      .contentReact{
+        position: absolute;
+        top: 27%;
+        left: 26%;
+        opacity: 0;
+        transition: all 0.4s ease-in-out;
+      }
+      .imgSkillsHover:hover .contentReact{
+        opacity: 1;
+      }
+      .contentCPlusPlus{
+        position: absolute;
+        top: 27%;
+        left: 35%;
+        opacity: 0;
+        transition: all 0.4s ease-in-out;
+      }
+      .imgSkillsHover:hover .contentCPlusPlus{
+        opacity: 1;
+      }
+
+      /********************* WORK ***********************/
+
+      #work{
+        margin-top: 348%;
+        position: absolute;
+        font-family: 'Josefin Sans', sans-serif;
+      }
+      #headerWork{
+        margin-left: 43.5%;
+        font-size: 4em;
+        font-weight: bold
+      }
+      #pradalServicos{
+        margin-top: 5%;
+        margin-left:44.5%;
+        width: 100px;
+        height: auto;
+      }
+      #appear_image_div{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: 10;
+        opacity: 0.7;
+        background: #002447;
+      }
+      #appear_image{
+        width: 400px;
+        display: block;
+        height: auto;
+        margin-left: 25%;
+        margin-top: 320%;
+        position: absolute;
+        z-index: 11;
+      }
+      #closeImg{
+        position: fixed;
+        z-index: 12;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+        font-size: 24px;
+      }
+      #closeImg:hover{
+        opacity: 0.8;
+      }
+
+      /**********  CONTACT ************/
+      #contato{
+        margin-top: 432%;
+        position: absolute;
+        font-family: 'Josefin Sans', sans-serif;
+      }
+      #headerContato{
+        margin-left: 40%;
+        font-size: 4em;
+        font-weight: bold
+      }
+      #contatoForm{
+        margin-top: 8%;
+      }
+      #textContato{
+        margin-top: 1%;
+        margin-right: 50%;
+        font-size: 2em;
+        position: absolute;
+      }
+      #findMe{
+        margin-top: -29px;
+        font-size: 20px;
+      }
+
+      /****************  FOOOTER **************/
+      footer{
+        width: 100vw;
+        position: absolute;
+        margin-top: 499%;
+        background: #C0C0C0;
+        opacity: 0.8;
+
+      }
+      .footerItens:hover{
+        opacity: 0.7;
+        color: inherit;
+        transition: all 0.3s ease-in-out;
+      }
+      #desenvolvido{
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 12px;
+      }
+
+}
+
+/* ----------------------------------------------------------------------- Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+  #toggle-sidebar{
+    font-size: 28px;
+    margin-top: 5%;
+    opacity: 0.8;
+  }
+
+  #flyoutMenu h2 a{
+    color: #333;
+    font-size: 30px;
+    margin-left: 22px;
+  }
+
+  #flyoutMenu h2 a:hover{
+    text-decoration: underline;
+
+  }
+
+  #banner{
+    width: 100%;
+    height: 100vh;
+    background: url('imagens/pexels-photo-48606.png') no-repeat;
+    background-size: 100%;
+  }
+
+  .textDeveloper{
+    margin-top: 22%;
+    margin-left: 15%;
+    color: white;
+    font-size: 5em;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  .textDeveloper2{
+    margin-top: 23%;
+    margin-left: 36%;
+    color: white;
+    font-size: 4.5em;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+
+  /******************************* SOBRE **********************************/
+  #about{
+    margin-top: 60%;
+    position: absolute;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  #headerAbout{
+    margin-left: 50%;
+    font-size: 4em;
+    font-weight: bold;
+  }
+
+  #photo{
+    background: url('imagens/Me.jpg');
+    background-size: cover;
+    height: 50vh;
+    width: 25vw;
+    margin-left: 15%;
+    margin-top: 5%;
+    border-radius: 3%;
+  }
+  #aboutText{
+    margin-left: 1%;
+    margin-top: 10%;
+    font-size: 1.6em;
+    text-align: inherit;
+  }
+
+
+  /********************************* RESUME ****************/
+  #resume{
+  margin-top: 115%;
+  position: absolute;
+  font-family: 'Josefin Sans', sans-serif;
+  }
+  #headerResume{
+    margin-left: 47%;
+    font-size: 4em;
+    font-weight: bold;
+  }
+  #textResume{
+    margin-top: 5%;
+  }
+  .fieldResume{
+    text-align: left;
+    font-size: 1.7em;
+    margin-left: 20%;
+    cursor: pointer;
+    transition: all 0.6s ease-in-out;
+
+  }
+  .fieldResume:hover{
+    margin-left: 22%;
+    cursor: pointer;
+    transition: all 0.6s ease-in-out;
+  }
+  #borderBaixoResume{
+    border: 1px solid #C0C0C0;
+    margin-top: 2%;
+    margin-left: 8%;
+    margin-bottom: 5%;
+
+  }
+
+  /********************************* SKILLS ****************/
+
+  #skills{
+    margin-top: 159%;
+    position: absolute;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  #headerSkills{
+    margin-left: 50%;
+    font-size: 4em;
+    font-weight: bold;
+  }
+  #imgSkills{
+    margin-top: 7%;
+    margin-left: 22%;
+  }
+  #imgSkills2{
+    margin-top: 7%;
+    margin-left: 26%;
+  }
+  .imgSkillsHover{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2em;
+    position: relative;
+    font-weight: bold;
+  }
+  .contentHTML{
+    position: absolute;
+    top: 27px;
+    left: 12%;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+  }
+  .imgSkillsHover:hover .contentHTML{
+    opacity: 1;
+  }
+  .contentCSS{
+    position: absolute;
+    top: 27px;
+    left: 16%;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+  }
+  .imgSkillsHover:hover .contentCSS{
+    opacity: 1;
+  }
+  .contentJS{
+    position: absolute;
+    font-size: 0.9em;
+    top: 19%;
+    left: 9.5%;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+  }
+  .imgSkillsHover:hover .contentJS{
+    opacity: 1;
+  }
+  .contentJQuery{
+    position: absolute;
+    top: 20%;
+    left:16%;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+  }
+  .imgSkillsHover:hover .contentJQuery{
+    opacity: 1;
+  }
+  .contentBootstrap{
+    position: absolute;
+    font-size: 0.9em;
+    top: 27%;
+    left:12%;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+  }
+  .imgSkillsHover:hover .contentBootstrap{
+    opacity: 1;
+  }
+  .contentReact{
+    position: absolute;
+    top: 27%;
+    left: 12%;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+  }
+  .imgSkillsHover:hover .contentReact{
+    opacity: 1;
+  }
+  .contentCPlusPlus{
+    position: absolute;
+    top: 27%;
+    left: 17%;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+  }
+  .imgSkillsHover:hover .contentCPlusPlus{
+    opacity: 1;
+  }
+
+
+    /********************* WORK ***********************/
+
+    #work{
+      margin-top: 209%;
+      position: absolute;
+      font-family: 'Josefin Sans', sans-serif;
+      }
+    #headerWork{
+      margin-left: 49.8%;
+      font-size: 4em;
+      font-weight: bold
+    }
+    #pradalServicos{
+      margin-top: 5%;
+      margin-left: 50.8%;
+      width: 100px;
+      height: auto;
+    }
+    #appear_image_div{
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      z-index: 10;
+      opacity: 0.7;
+      background: #002447;
+    }
+    #appear_image{
+      width: 800px;
+      display: block;
+      height: auto;
+      margin-left: 21%;
+      margin-top: 190%;
+      position: absolute;
+      z-index: 11;
+    }
+    #closeImg{
+      position: fixed;
+      z-index: 12;
+      top: 20px;
+      right: 20px;
+      cursor: pointer;
+      font-size: 24px;
+    }
+    #closeImg:hover{
+      opacity: 0.8;
+    }
+    .borderBaixo{
+      border: 1px solid #C0C0C0;
+      margin-top: 2%;
+      margin-left: 8%;
+      margin-bottom: 5%;
+
+    }
+
+
+    /******  CONTATO **********/
+    #contato{
+      margin-top: 260%;
+      position: absolute;
+      font-family: 'Josefin Sans', sans-serif;
+    }
+    #headerContato{
+      margin-left: 47.8%;
+      font-size: 4em;
+      font-weight: bold
+    }
+    #contatoForm{
+      margin-top: 5%;
+      margin-left: 8%;
+
+    }
+    #textContato{
+      margin-top: 1%;
+      margin-right: 55%;
+      font-size: 2em;
+      position: absolute;
+    }
+    #findMe{
+      font-size: 28px;
+    }
+
+    /****************  FOOOTER **************/
+    footer{
+      width: 100%;
+      position: absolute;
+      margin-top:300%;
+      background: #C0C0C0;
+      opacity: 0.8;
+
+    }
+    .footerItens:hover{
+      opacity: 0.7;
+      color: inherit;
+      transition: all 0.3s ease-in-out;
+    }
+    #desenvolvido{
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 15px;
+      padding-bottom: 0;
+      padding-top: 0;
+    }
+
+
 }
